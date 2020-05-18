@@ -1,0 +1,27 @@
+{
+  "name": "mywebpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "mywebpack": "./webpack/compiler.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config ./build/webpack.dev.config.js",
+    "mybuild": "mywebpack --config ./build/webpack.dev.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/parser": "^7.9.4",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/traverse": "^7.9.0",
+    "@babel/types": "^7.9.0",
+    "commander": "^5.0.0",
+    "prettier": "^2.0.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .dot {
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: #000;
+            border-radius: 50%;
+        }
+        .container > div {
+            height: 50px;
+            width: 50px;
+            border: 1px solid #cccccc;
+            display: flex;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .top-start {
+            justify-content: flex-start;
+        }
+        .top-center {
+            justify-content: center;
+        }
+        .top-end {
+            justify-content:flex-end;
+        }
+        .middle-start {
+            align-items: center;
+        }
+        .middle-center {
+            align-items: center;
+            justify-content: center;
+        }
+        .middle-end {
+            align-items: center;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body class="container">
+    <div class="top-start">
+        <div class="dot"></div>
+    </div>
+    <div class="top-center">
+        <div class="dot"></div>
+    </div>
+    <div class="top-end">
+        <div class="dot"></div>
+    </div>
+    <div class="middle-start">
+        <div class="dot"></div>
+    </div>
+    <div class="middle-center">
+        <div class="dot"></div>
+    </div>
+    <div class="middle-end">
+        <div class="dot"></div>
+    </div>
+    <div style="justify-content: space-between">
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div style="justify-content: space-between;flex-direction: column">
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div style="justify-content: space-between;flex-direction: column; align-items: flex-end;">
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div style="justify-content: space-between;flex-direction: column; align-items: flex-end;">
+        <div class="dot"></div>
+        <div class="dot" style="align-self: flex-start;"></div>
+    </div>
+    <div style="flex-direction: column; align-items: flex-end;">
+        <div class="dot"></div>
+        <div class="dot" style="align-self: center;"></div>
+    </div>
+    <div style="flex-direction: column; align-items: flex-end; justify-content: space-around;">
+        <div class="dot"></div>
+        <div class="dot" style="align-self: center;"></div>
+        <div class="dot" style="align-self: flex-start;"></div>
+    </div>
+    <div style="flex-wrap: wrap;justify-content: space-between;align-content: space-between;">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot" style="align-self: flex-end;"></div>
+    </div>
+    <div style="display: flex; width: 1000px; background-color: aqua;">
+        <div style="width: 100px; background-color: red;"></div>
+        <div style="flex-grow: 1;width: 150px; background-color: yellow;"></div>
+        <div style="flex-shrink: 2; flex-grow: 1; width: 100px; background-color: blue; flex-basis: 200px;">
+            <div style="width: 1000px"></div>
+        </div>
+    </div>
+</body>
+</html>
